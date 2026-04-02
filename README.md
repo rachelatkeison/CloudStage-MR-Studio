@@ -141,31 +141,31 @@ Together, these systems explore:
 
 ### ♡ Environment & Stage
 
-![CloudStage Environment](assets/theater-wide.png)
+![CloudStage Environment](images/theater-wide.png)
 
-![Active Stage View](assets/theateractivated.png)
+![Active Stage View](images/theateractivated.png)
 
 ---
 
 ### ✧ Role-Based Experience
 
-![Main Menu](assets/menu.png)
+![Main Menu](images/menu.png)
 
-![Performer View](assets/performerpov.png)
+![Performer View](images/performerpov.png)
 
 ---
 
 ### ♫ Interactive Performance
 
-![Piano Interaction](assets/in-piano.png)
+![Piano Interaction](images/in-piano.png)
 
-![Keyboard Close View](assets/piano-pov.png)
+![Keyboard Close View](images/piano-pov.png)
 
 ---
 
 ### ✧ External Audio Engine (Synth Bridge)
 
-![Synth Bridge Running](assets/projucer-app.png)
+![Synth Bridge Running](images/projucer-app.png)
 
 ---
 
