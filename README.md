@@ -1,25 +1,92 @@
 # ✧ CloudStage MR Studio
 
-> *a spatial audio performance environment for immersive, role-based musical interaction*
+> *a spatial audio performance environment powered by a real-time external synthesis bridge*
 
 ---
 
 ## ♡ Overview
 
-**CloudStage MR Studio** is an experimental mixed-reality audio environment where music is not just heard — it is *experienced through space, movement, and presence*.
+**CloudStage MR Studio** is an experimental mixed-reality audio environment where sound is generated, transmitted, and experienced across multiple systems in real time.
 
-Users exist within a shared 3D world as either:
+Users exist within a 3D world as either:
 
 ✦ **performers** — generating sound through interactive instruments
-✦ **listeners** — exploring and perceiving music spatially
+✦ **listeners** — exploring spatial audio environments
 
-The system explores how **position, proximity, and interaction** shape musical perception in real time.
+At the core of the system is the **CloudStage Synth Bridge** — a real-time audio engine built with JUCE that connects Unity interaction to external synthesis.
 
-Built as part of **Aureine Audio Systems**, CloudStage bridges:
+This creates a pipeline where:
 
-✦ real-time audio systems
-✦ spatial interaction design
-✦ expressive visual environments
+> ✦ *physical interaction in a virtual space directly drives a real audio engine* ✦
+
+---
+
+## ✧ Core System Components
+
+### ♫ CloudStage (Unity Environment)
+
+* 3D interactive performance space
+* role-based system (listener vs performer)
+* spatial audio positioning
+* real-time visual feedback
+
+### ✧ CloudStage Synth Bridge (JUCE / Projucer App)
+
+* external real-time synthesis engine
+* receives MIDI / note events from Unity
+* generates audio independently of the game engine
+* designed for low-latency audio processing
+
+### ♡ Interaction Pipeline
+
+* Unity captures input + movement
+* events are translated into musical data
+* data is sent to the Synth Bridge
+* audio is generated and spatialized back into the environment
+
+---
+
+## ✧ System Architecture
+
+```
+Unity 3D Environment
+   ↓
+Interaction Layer (Input / Movement / Roles)
+   ↓
+MIDI / Event Translation
+   ↓
+CloudStage Synth Bridge (JUCE Audio Engine)
+   ↓
+Real-Time Audio Output
+   ↓
+Spatial Rendering in Environment
+```
+
+This architecture separates:
+
+✦ interaction logic
+✦ audio generation
+✦ spatial rendering
+
+resulting in a more scalable and professional audio system design.
+
+---
+
+## ✧ Why This Matters
+
+Most Unity-based audio systems rely entirely on the engine’s built-in audio.
+
+CloudStage instead:
+
+✦ uses an external synthesis engine
+✦ enables higher-quality DSP possibilities
+✦ mirrors real-world DAW/plugin workflows
+
+This approach aligns more closely with:
+
+* professional audio software
+* plugin-based music production systems
+* real-time performance environments
 
 ---
 
@@ -27,120 +94,114 @@ Built as part of **Aureine Audio Systems**, CloudStage bridges:
 
 ### ♫ Spatial Audio Interaction
 
-* sound changes based on player position in 3D space
-* proximity-based listening zones
-* immersive environmental audio perception
+* sound changes based on position in 3D space
+* proximity-based perception
+* immersive listening environments
 
-### ✧ Role-Based Experience
+### ✧ Real-Time Performance
 
-* dynamic switching between **listener** and **performer** roles
-* performers actively generate sound
-* listeners explore and interpret the space
+* playable in-world keyboard
+* note-triggered synthesis
+* responsive audio generation
 
-### ♡ Interactive Performance System
+### ♡ External Audio Engine Integration
 
-* playable in-world MIDI-style keyboard
-* real-time note triggering
-* responsive visual feedback tied to sound
+* Unity → JUCE communication pipeline
+* real-time event-driven synthesis
+* separation of audio and visual systems
 
-### ✧ Reactive Environment
+### ✧ Reactive Visual System
 
-* visual elements respond to audio events
-* stage lighting + objects react to performance
-* environment designed for emotional + perceptual feedback
-
----
-
-## ✧ System Architecture
-
-```
-Unity 3D Scene
-   ↓
-Interaction Layer (Input / XR / Movement)
-   ↓
-MIDI / Event System
-   ↓
-Audio Engine (Synth / Playback)
-   ↓
-Spatial Audio Output
-```
-
-The system is designed around **real-time event flow**, ensuring that interaction, audio generation, and spatial rendering remain tightly synchronized.
-
----
-
-## ✧ Audio & Interaction Design
-
-CloudStage focuses on how **physical movement influences sound perception**:
-
-* moving closer to a source increases clarity and presence
-* distance introduces spatial diffusion
-* position affects how sound is experienced emotionally
-
-This creates a system where:
-
-> ✦ *the environment itself becomes an instrument* ✦
+* environment responds to audio events
+* lighting and objects reflect performance
+* feedback loop between sound and visuals
 
 ---
 
 ## ✧ Integration with Aureine Audio Systems
 
-CloudStage is part of a larger ecosystem of audio tools:
+CloudStage connects with a larger ecosystem:
 
-* ✦ **LumenBloom** — adaptive synthesis engine (C++ / JUCE)
-* ✦ **Aureine Music Box** — real-time harmonic intelligence system
+* ✦ **LumenBloom** — advanced synthesis engine (C++ / JUCE)
+* ✦ **Aureine Music Box** — harmonic analysis + generative intelligence
 
-Together, these projects explore:
+Together, these systems explore:
 
-> ✦ intelligent, expressive, and immersive music technology ✦
+> ✦ intelligent, expressive, and spatial music technology ✦
 
 ---
 
 ## ✧ Demo
 
-🎥 *Demo video:* [https://youtu.be/eQDCkgNJ8cs]
+🎥 *Demo video:* [https://youtu.be/NzFsLJeiPeg]
 
 ---
 
 ## ✧ Screenshots
 
-![Scene Overview](assets/scene.png)
-![Performance Mode](assets/performance.png)
-![Spatial Interaction](assets/spatial.png)
+### ♡ Environment & Stage
+
+![CloudStage Environment](assets/theater-wide.png)
+
+![Active Stage View](assets/theateractivated.png)
+
+---
+
+### ✧ Role-Based Experience
+
+![Main Menu](assets/menu.png)
+
+![Performer View](assets/performerpov.png)
+
+---
+
+### ♫ Interactive Performance
+
+![Piano Interaction](assets/in-piano.png)
+
+![Keyboard Close View](assets/piano-pov.png)
+
+---
+
+### ✧ External Audio Engine (Synth Bridge)
+
+![Synth Bridge Running](assets/projucer-app.png)
 
 ---
 
 ## ✧ Technologies Used
 
 * Unity (C#)
-* Real-time audio systems
-* MIDI / event-based interaction design
-* 3D spatial environments
+* JUCE (C++)
+* Projucer
+* MIDI / event-driven systems
+* real-time audio processing
+* 3D spatial interaction design
 
 ---
 
-## ✧ Key Design Goals
+## ✧ Key Design Focus
 
 * real-time responsiveness
-* expressive musical interaction
+* low-latency audio interaction
+* separation of concerns (audio vs interaction)
 * immersive spatial perception
-* clean separation of interaction + audio systems
 
 ---
 
 ## ✧ Future Enhancements
 
-* multi-user networked sessions
-* real-time collaboration between performers
+* networked multi-user performance sessions
 * latency-aware synchronization
-* advanced spatial audio modeling
-* integration with external DAWs and MIDI devices
+* advanced DSP integration
+* DAW/plugin interoperability
+* expanded spatial audio modeling
 
 ---
 
 ## ♡ Closing
 
-CloudStage MR Studio represents an exploration into:
+CloudStage MR Studio explores a new interaction model:
 
-> ✦ how music can exist beyond screens —
-> into space, presence, and experience ✦
+> ✦ where movement becomes music,
+> and space becomes part of the instrument ✦
