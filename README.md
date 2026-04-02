@@ -1,64 +1,146 @@
-# CloudStage MR Studio
+# ✧ CloudStage MR Studio
 
-A spatial music environment for interactive performance and listening.
+> *a spatial audio performance environment for immersive, role-based musical interaction*
 
-CloudStage MR Studio is an experimental virtual concert environment where performers and listeners interact with music inside a responsive stage space.
+---
 
-Instead of treating sound like a fixed background element, this project explores what happens when a musical environment can react to input, movement, and stage interaction.
+## ♡ Overview
 
-## What it does
+**CloudStage MR Studio** is an experimental mixed-reality audio environment where music is not just heard — it is *experienced through space, movement, and presence*.
 
-- lets the user enter as either an audience member or a performer
-- includes a playable on-stage keyboard
-- shows pressed notes and chord recognition in real time
-- changes the listening experience based on position in the hall
-- includes multiple audience listening modes
-- uses reactive stage lighting, floating elements, and environmental visuals
+Users exist within a shared 3D world as either:
 
-## Original Music
+✦ **performers** — generating sound through interactive instruments
+✦ **listeners** — exploring and perceiving music spatially
 
-The ambient music used in the environment is a short piece that I composed myself for this project called "warm tea cup".
+The system explores how **position, proximity, and interaction** shape musical perception in real time.
 
-I wanted the music to feel like it belonged inside the space, so I treated the composition as part of the environment design rather than as just a background track.
+Built as part of **Aureine Audio Systems**, CloudStage bridges:
 
-## Why I made it
+✦ real-time audio systems
+✦ spatial interaction design
+✦ expressive visual environments
 
-I built CloudStage because I’m interested in music technology that feels expressive, spatial, and human.
+---
 
-I wanted to explore the idea that a stage can behave like more than a static location, it can become part of the instrument and part of the listening experience.
+## ✧ Core Capabilities
 
-## Tools Used
+### ♫ Spatial Audio Interaction
 
-- Unity
-- C#
-- real-time audio logic
-- interactive music systems
-- spatial design
+* sound changes based on player position in 3D space
+* proximity-based listening zones
+* immersive environmental audio perception
 
-## Screenshots
+### ✧ Role-Based Experience
 
-![Wide Theater View](images/theater-wide.png)
-![Menu View](images/menu.png)
-![Audience View 1-4](images/theateractivated.png)
-![Performer Stage](images/performerpov.png)
-![Piano On Stage](images/piano-pov.png)
-![Piano Mode](images/in-piano.png)
-![JUCE Synth Bridge Activated](images/projucer-app.png)
+* dynamic switching between **listener** and **performer** roles
+* performers actively generate sound
+* listeners explore and interpret the space
 
-## Demo Video
+### ♡ Interactive Performance System
 
-Watch the demo here: https://youtu.be/NzFsLJeiPeg
+* playable in-world MIDI-style keyboard
+* real-time note triggering
+* responsive visual feedback tied to sound
 
-## Future Ideas
+### ✧ Reactive Environment
 
-- deeper JUCE integration
-- more advanced spatial harmony
-- adaptive accompaniment
-- expanded performer/listener interaction
-- multiplayer concert experiences
-- more advanced instruments to select
-- vocal processing/ mic integration
+* visual elements respond to audio events
+* stage lighting + objects react to performance
+* environment designed for emotional + perceptual feedback
 
-## Author
+---
 
-Rachel Atkeison
+## ✧ System Architecture
+
+```
+Unity 3D Scene
+   ↓
+Interaction Layer (Input / XR / Movement)
+   ↓
+MIDI / Event System
+   ↓
+Audio Engine (Synth / Playback)
+   ↓
+Spatial Audio Output
+```
+
+The system is designed around **real-time event flow**, ensuring that interaction, audio generation, and spatial rendering remain tightly synchronized.
+
+---
+
+## ✧ Audio & Interaction Design
+
+CloudStage focuses on how **physical movement influences sound perception**:
+
+* moving closer to a source increases clarity and presence
+* distance introduces spatial diffusion
+* position affects how sound is experienced emotionally
+
+This creates a system where:
+
+> ✦ *the environment itself becomes an instrument* ✦
+
+---
+
+## ✧ Integration with Aureine Audio Systems
+
+CloudStage is part of a larger ecosystem of audio tools:
+
+* ✦ **LumenBloom** — adaptive synthesis engine (C++ / JUCE)
+* ✦ **Aureine Music Box** — real-time harmonic intelligence system
+
+Together, these projects explore:
+
+> ✦ intelligent, expressive, and immersive music technology ✦
+
+---
+
+## ✧ Demo
+
+🎥 *Demo video:* [https://youtu.be/eQDCkgNJ8cs]
+
+---
+
+## ✧ Screenshots
+
+![Scene Overview](assets/scene.png)
+![Performance Mode](assets/performance.png)
+![Spatial Interaction](assets/spatial.png)
+
+---
+
+## ✧ Technologies Used
+
+* Unity (C#)
+* Real-time audio systems
+* MIDI / event-based interaction design
+* 3D spatial environments
+
+---
+
+## ✧ Key Design Goals
+
+* real-time responsiveness
+* expressive musical interaction
+* immersive spatial perception
+* clean separation of interaction + audio systems
+
+---
+
+## ✧ Future Enhancements
+
+* multi-user networked sessions
+* real-time collaboration between performers
+* latency-aware synchronization
+* advanced spatial audio modeling
+* integration with external DAWs and MIDI devices
+
+---
+
+## ♡ Closing
+
+CloudStage MR Studio represents an exploration into:
+
+> ✦ how music can exist beyond screens —
+> into space, presence, and experience ✦
